@@ -1,0 +1,18 @@
+{
+  "name": "graphql.wtf-error-handling",
+  "private": true,
+  "scripts": {
+    "start": "ts-node server.ts",
+    "dev": "ts-node-dev server.ts",
+    "check": "tsc --pretty --noEmit"
+  },
+  "dependencies": {
+    "@graphql-yoga/node": "0.0.1-beta.1",
+    "graphql": "16.3.0",
+    "ts-node": "10.5.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "1.1.8",
+    "typescript": "4.5.5"
+  }
+}
