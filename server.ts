@@ -6,16 +6,12 @@ const typeDefs = /* GraphQL */ `
   }
 
   type Mutation {
-    login(input: LoginInput!): LoginResult!
+    login(input: LoginInput!): AuthPayload!
   }
 
-  type LoginResult {
-    user: User!
-    loginErrors: [LoginError!]!
-  }
-
-  union LoginError =
-      IncorrectCredentialsError
+  union AuthPayload =
+      User
+    | IncorrectCredentialsError
     | UserSuspendedError
     | UserBannedError
 
